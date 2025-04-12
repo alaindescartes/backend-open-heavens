@@ -20,7 +20,9 @@ connectDB();
 
 // Middleware
 app.use(cors({
-    origin: "https://open-heaven-60614b89b4ca.herokuapp.com"
+    origin: "https://open-heaven-60614b89b4ca.herokuapp.com",
+    credentials: true,
+    optionsSuccessStatus: 200
   }));
 app.use(express.json());
 
