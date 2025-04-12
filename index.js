@@ -19,7 +19,9 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+    origin: "https://open-heaven-60614b89b4ca.herokuapp.com"
+  }));
 app.use(express.json());
 
 // Routes
